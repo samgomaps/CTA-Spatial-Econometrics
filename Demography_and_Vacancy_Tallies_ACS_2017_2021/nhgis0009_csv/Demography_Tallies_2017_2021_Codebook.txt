@@ -1,0 +1,1244 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0009_ds255_20215_tract'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2017-2021
+Geographic level: Census Tract (by State--County)
+Dataset:          2021 American Community Survey: 5-Year Data [2017-2021, Tracts & Larger Areas]
+   NHGIS code:    2017_2021_ACS5b
+   NHGIS ID:      ds255
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Aggregate Number of Vehicles (Car, Truck, or Van) Used in Commuting by Workers 16 Years and Over by Sex
+   Universe:    Workers whose means of transportation is car, truck, or van
+   Source code: B08015
+   NHGIS code:  AO1W
+ 
+2. Poverty Status in the Past 12 Months by Sex by Age
+   Universe:    Population for whom poverty status is determined
+   Source code: B17001
+   NHGIS code:  AO5D
+ 
+3. Poverty Status in the Past 12 Months by Sex by Age (Black or African American Alone)
+   Universe:    Black or African American alone population for whom poverty status is determined
+   Source code: B17001B
+   NHGIS code:  AO5F
+ 
+4. Poverty Status in the Past 12 Months by Sex by Age (Hispanic or Latino)
+   Universe:    Hispanic or Latino population for whom poverty status is determined
+   Source code: B17001I
+   NHGIS code:  AO5M
+ 
+5. Poverty Status in the Past 12 Months by Age
+   Universe:    Population for whom poverty status is determined
+   Source code: B17020
+   NHGIS code:  AO6A
+ 
+6. Poverty Status in the Past 12 Months by Age (Black or African American Alone)
+   Universe:    Black or African American alone population for whom poverty status is determined
+   Source code: B17020B
+   NHGIS code:  AO6C
+ 
+7. Poverty Status in the Past 12 Months by Age (Hispanic or Latino)
+   Universe:    Hispanic or Latino population for whom poverty status is determined
+   Source code: B17020I
+   NHGIS code:  AO6J
+ 
+8. Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Black or African American Alone Householder)
+   Universe:    Households with a householder who is Black or African American alone
+   Source code: B19001B
+   NHGIS code:  AO68
+ 
+9. Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Hispanic or Latino Householder)
+   Universe:    Households with a householder who is Hispanic or Latino
+   Source code: B19001I
+   NHGIS code:  AO7F
+ 
+10. Median Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Black or African American Alone Householder)
+    Universe:    Households with a householder who is Black or African American alone
+    Source code: B19013B
+    NHGIS code:  AO7H
+ 
+11. Median Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Hispanic or Latino Householder)
+    Universe:    Households with a householder who is Hispanic or Latino
+    Source code: B19013I
+    NHGIS code:  AO7O
+ 
+12. Household Income Quintile Upper Limits
+    Universe:    Households
+    Source code: B19080
+    NHGIS code:  AO7Z
+ 
+13. Mean Household Income of Quintiles
+    Universe:    Households
+    Source code: B19081
+    NHGIS code:  AO70
+ 
+14. Gini Index of Income Inequality
+    Universe:    Households
+    Source code: B19083
+    NHGIS code:  AO72
+ 
+15. Industry by Occupation for the Civilian Employed Population 16 Years and Over
+    Universe:    Civilian employed population 16 years and over
+    Source code: C24050
+    NHGIS code:  APGX
+ 
+16. Household Income by Selected Monthly Owner Costs as a Percentage of Household Income in the Past 12 Months
+    Universe:    Owner-occupied housing units
+    Source code: B25095
+    NHGIS code:  APBY
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STUSAB:      State/US-Abbreviation (USPS)
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        BLKGRP:      Block Group
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+        AIHHTLI:     American Indian/Hawaiian Home Land Trust Land Indicator
+        AITSA:       Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2019-2021, 116th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        ZCTA5A:      5-Digit ZIP Code Tabulation Area Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PCI:         Metropolitan/Micropolitan Principal City Indicator
+        PUMAA:       Public Use Microdata Area Code
+        GEO_ID:      Census Geographic Area Identifier
+        BTTRA:       Tribal Census Tract Code
+        BTBG:        Tribal Block Group
+        TL_GEO_ID:   TIGER/Line Shapefile Geographic Area Identifier
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Geographic Area Full Name
+ 
+    Table 1:     Aggregate Number of Vehicles (Car, Truck, or Van) Used in Commuting by Workers 16 Years and Over by Sex
+    Universe:    Workers whose means of transportation is car, truck, or van
+    Source code: B08015
+    NHGIS code:  AO1W
+        AO1WE001:    Aggregate number of vehicles (car, truck, or van) used in commuting
+        AO1WE002:    Aggregate number of vehicles (car, truck, or van) used in commuting: Male
+        AO1WE003:    Aggregate number of vehicles (car, truck, or van) used in commuting: Female
+ 
+    Table 2:     Poverty Status in the Past 12 Months by Sex by Age
+    Universe:    Population for whom poverty status is determined
+    Source code: B17001
+    NHGIS code:  AO5D
+        AO5DE001:    Total
+        AO5DE002:    Income in the past 12 months below poverty level
+        AO5DE003:    Income in the past 12 months below poverty level: Male
+        AO5DE004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AO5DE005:    Income in the past 12 months below poverty level: Male: 5 years
+        AO5DE006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AO5DE007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AO5DE008:    Income in the past 12 months below poverty level: Male: 15 years
+        AO5DE009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AO5DE010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AO5DE011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AO5DE012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AO5DE013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AO5DE014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AO5DE015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AO5DE016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AO5DE017:    Income in the past 12 months below poverty level: Female
+        AO5DE018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AO5DE019:    Income in the past 12 months below poverty level: Female: 5 years
+        AO5DE020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AO5DE021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AO5DE022:    Income in the past 12 months below poverty level: Female: 15 years
+        AO5DE023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AO5DE024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AO5DE025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AO5DE026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AO5DE027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AO5DE028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AO5DE029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AO5DE030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AO5DE031:    Income in the past 12 months at or above poverty level
+        AO5DE032:    Income in the past 12 months at or above poverty level: Male
+        AO5DE033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AO5DE034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AO5DE035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AO5DE036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AO5DE037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AO5DE038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AO5DE039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AO5DE040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AO5DE041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AO5DE042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AO5DE043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AO5DE044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AO5DE045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AO5DE046:    Income in the past 12 months at or above poverty level: Female
+        AO5DE047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AO5DE048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AO5DE049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AO5DE050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AO5DE051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AO5DE052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AO5DE053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AO5DE054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AO5DE055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AO5DE056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AO5DE057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AO5DE058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AO5DE059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+    Table 3:     Poverty Status in the Past 12 Months by Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone population for whom poverty status is determined
+    Source code: B17001B
+    NHGIS code:  AO5F
+        AO5FE001:    Total
+        AO5FE002:    Income in the past 12 months below poverty level
+        AO5FE003:    Income in the past 12 months below poverty level: Male
+        AO5FE004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AO5FE005:    Income in the past 12 months below poverty level: Male: 5 years
+        AO5FE006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AO5FE007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AO5FE008:    Income in the past 12 months below poverty level: Male: 15 years
+        AO5FE009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AO5FE010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AO5FE011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AO5FE012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AO5FE013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AO5FE014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AO5FE015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AO5FE016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AO5FE017:    Income in the past 12 months below poverty level: Female
+        AO5FE018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AO5FE019:    Income in the past 12 months below poverty level: Female: 5 years
+        AO5FE020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AO5FE021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AO5FE022:    Income in the past 12 months below poverty level: Female: 15 years
+        AO5FE023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AO5FE024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AO5FE025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AO5FE026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AO5FE027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AO5FE028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AO5FE029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AO5FE030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AO5FE031:    Income in the past 12 months at or above poverty level
+        AO5FE032:    Income in the past 12 months at or above poverty level: Male
+        AO5FE033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AO5FE034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AO5FE035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AO5FE036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AO5FE037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AO5FE038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AO5FE039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AO5FE040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AO5FE041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AO5FE042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AO5FE043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AO5FE044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AO5FE045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AO5FE046:    Income in the past 12 months at or above poverty level: Female
+        AO5FE047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AO5FE048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AO5FE049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AO5FE050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AO5FE051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AO5FE052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AO5FE053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AO5FE054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AO5FE055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AO5FE056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AO5FE057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AO5FE058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AO5FE059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+    Table 4:     Poverty Status in the Past 12 Months by Sex by Age (Hispanic or Latino)
+    Universe:    Hispanic or Latino population for whom poverty status is determined
+    Source code: B17001I
+    NHGIS code:  AO5M
+        AO5ME001:    Total
+        AO5ME002:    Income in the past 12 months below poverty level
+        AO5ME003:    Income in the past 12 months below poverty level: Male
+        AO5ME004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AO5ME005:    Income in the past 12 months below poverty level: Male: 5 years
+        AO5ME006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AO5ME007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AO5ME008:    Income in the past 12 months below poverty level: Male: 15 years
+        AO5ME009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AO5ME010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AO5ME011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AO5ME012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AO5ME013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AO5ME014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AO5ME015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AO5ME016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AO5ME017:    Income in the past 12 months below poverty level: Female
+        AO5ME018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AO5ME019:    Income in the past 12 months below poverty level: Female: 5 years
+        AO5ME020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AO5ME021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AO5ME022:    Income in the past 12 months below poverty level: Female: 15 years
+        AO5ME023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AO5ME024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AO5ME025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AO5ME026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AO5ME027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AO5ME028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AO5ME029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AO5ME030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AO5ME031:    Income in the past 12 months at or above poverty level
+        AO5ME032:    Income in the past 12 months at or above poverty level: Male
+        AO5ME033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AO5ME034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AO5ME035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AO5ME036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AO5ME037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AO5ME038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AO5ME039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AO5ME040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AO5ME041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AO5ME042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AO5ME043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AO5ME044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AO5ME045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AO5ME046:    Income in the past 12 months at or above poverty level: Female
+        AO5ME047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AO5ME048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AO5ME049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AO5ME050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AO5ME051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AO5ME052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AO5ME053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AO5ME054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AO5ME055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AO5ME056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AO5ME057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AO5ME058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AO5ME059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+    Table 5:     Poverty Status in the Past 12 Months by Age
+    Universe:    Population for whom poverty status is determined
+    Source code: B17020
+    NHGIS code:  AO6A
+        AO6AE001:    Total
+        AO6AE002:    Income in the past 12 months below poverty level
+        AO6AE003:    Income in the past 12 months below poverty level: Under 6 years
+        AO6AE004:    Income in the past 12 months below poverty level: 6 to 11 years
+        AO6AE005:    Income in the past 12 months below poverty level: 12 to 17 years
+        AO6AE006:    Income in the past 12 months below poverty level: 18 to 59 years
+        AO6AE007:    Income in the past 12 months below poverty level: 60 to 74 years
+        AO6AE008:    Income in the past 12 months below poverty level: 75 to 84 years
+        AO6AE009:    Income in the past 12 months below poverty level: 85 years and over
+        AO6AE010:    Income in the past 12 months at or above poverty level
+        AO6AE011:    Income in the past 12 months at or above poverty level: Under 6 years
+        AO6AE012:    Income in the past 12 months at or above poverty level: 6 to 11 years
+        AO6AE013:    Income in the past 12 months at or above poverty level: 12 to 17 years
+        AO6AE014:    Income in the past 12 months at or above poverty level: 18 to 59 years
+        AO6AE015:    Income in the past 12 months at or above poverty level: 60 to 74 years
+        AO6AE016:    Income in the past 12 months at or above poverty level: 75 to 84 years
+        AO6AE017:    Income in the past 12 months at or above poverty level: 85 years and over
+ 
+    Table 6:     Poverty Status in the Past 12 Months by Age (Black or African American Alone)
+    Universe:    Black or African American alone population for whom poverty status is determined
+    Source code: B17020B
+    NHGIS code:  AO6C
+        AO6CE001:    Total
+        AO6CE002:    Income in the past 12 months below poverty level
+        AO6CE003:    Income in the past 12 months below poverty level: Under 6 years
+        AO6CE004:    Income in the past 12 months below poverty level: 6 to 11 years
+        AO6CE005:    Income in the past 12 months below poverty level: 12 to 17 years
+        AO6CE006:    Income in the past 12 months below poverty level: 18 to 59 years
+        AO6CE007:    Income in the past 12 months below poverty level: 60 to 74 years
+        AO6CE008:    Income in the past 12 months below poverty level: 75 to 84 years
+        AO6CE009:    Income in the past 12 months below poverty level: 85 years and over
+        AO6CE010:    Income in the past 12 months at or above poverty level
+        AO6CE011:    Income in the past 12 months at or above poverty level: Under 6 years
+        AO6CE012:    Income in the past 12 months at or above poverty level: 6 to 11 years
+        AO6CE013:    Income in the past 12 months at or above poverty level: 12 to 17 years
+        AO6CE014:    Income in the past 12 months at or above poverty level: 18 to 59 years
+        AO6CE015:    Income in the past 12 months at or above poverty level: 60 to 74 years
+        AO6CE016:    Income in the past 12 months at or above poverty level: 75 to 84 years
+        AO6CE017:    Income in the past 12 months at or above poverty level: 85 years and over
+ 
+    Table 7:     Poverty Status in the Past 12 Months by Age (Hispanic or Latino)
+    Universe:    Hispanic or Latino population for whom poverty status is determined
+    Source code: B17020I
+    NHGIS code:  AO6J
+        AO6JE001:    Total
+        AO6JE002:    Income in the past 12 months below poverty level
+        AO6JE003:    Income in the past 12 months below poverty level: Under 6 years
+        AO6JE004:    Income in the past 12 months below poverty level: 6 to 11 years
+        AO6JE005:    Income in the past 12 months below poverty level: 12 to 17 years
+        AO6JE006:    Income in the past 12 months below poverty level: 18 to 59 years
+        AO6JE007:    Income in the past 12 months below poverty level: 60 to 74 years
+        AO6JE008:    Income in the past 12 months below poverty level: 75 to 84 years
+        AO6JE009:    Income in the past 12 months below poverty level: 85 years and over
+        AO6JE010:    Income in the past 12 months at or above poverty level
+        AO6JE011:    Income in the past 12 months at or above poverty level: Under 6 years
+        AO6JE012:    Income in the past 12 months at or above poverty level: 6 to 11 years
+        AO6JE013:    Income in the past 12 months at or above poverty level: 12 to 17 years
+        AO6JE014:    Income in the past 12 months at or above poverty level: 18 to 59 years
+        AO6JE015:    Income in the past 12 months at or above poverty level: 60 to 74 years
+        AO6JE016:    Income in the past 12 months at or above poverty level: 75 to 84 years
+        AO6JE017:    Income in the past 12 months at or above poverty level: 85 years and over
+ 
+    Table 8:     Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Black or African American Alone Householder)
+    Universe:    Households with a householder who is Black or African American alone
+    Source code: B19001B
+    NHGIS code:  AO68
+        AO68E001:    Total
+        AO68E002:    Less than $10,000
+        AO68E003:    $10,000 to $14,999
+        AO68E004:    $15,000 to $19,999
+        AO68E005:    $20,000 to $24,999
+        AO68E006:    $25,000 to $29,999
+        AO68E007:    $30,000 to $34,999
+        AO68E008:    $35,000 to $39,999
+        AO68E009:    $40,000 to $44,999
+        AO68E010:    $45,000 to $49,999
+        AO68E011:    $50,000 to $59,999
+        AO68E012:    $60,000 to $74,999
+        AO68E013:    $75,000 to $99,999
+        AO68E014:    $100,000 to $124,999
+        AO68E015:    $125,000 to $149,999
+        AO68E016:    $150,000 to $199,999
+        AO68E017:    $200,000 or more
+ 
+    Table 9:     Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Hispanic or Latino Householder)
+    Universe:    Households with a householder who is Hispanic or Latino
+    Source code: B19001I
+    NHGIS code:  AO7F
+        AO7FE001:    Total
+        AO7FE002:    Less than $10,000
+        AO7FE003:    $10,000 to $14,999
+        AO7FE004:    $15,000 to $19,999
+        AO7FE005:    $20,000 to $24,999
+        AO7FE006:    $25,000 to $29,999
+        AO7FE007:    $30,000 to $34,999
+        AO7FE008:    $35,000 to $39,999
+        AO7FE009:    $40,000 to $44,999
+        AO7FE010:    $45,000 to $49,999
+        AO7FE011:    $50,000 to $59,999
+        AO7FE012:    $60,000 to $74,999
+        AO7FE013:    $75,000 to $99,999
+        AO7FE014:    $100,000 to $124,999
+        AO7FE015:    $125,000 to $149,999
+        AO7FE016:    $150,000 to $199,999
+        AO7FE017:    $200,000 or more
+ 
+    Table 10:    Median Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Black or African American Alone Householder)
+    Universe:    Households with a householder who is Black or African American alone
+    Source code: B19013B
+    NHGIS code:  AO7H
+        AO7HE001:    Median household income in the past 12 months (in 2021 inflation-adjusted dollars)
+ 
+    Table 11:    Median Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Hispanic or Latino Householder)
+    Universe:    Households with a householder who is Hispanic or Latino
+    Source code: B19013I
+    NHGIS code:  AO7O
+        AO7OE001:    Median household income in the past 12 months (in 2021 inflation-adjusted dollars)
+ 
+    Table 12:    Household Income Quintile Upper Limits
+    Universe:    Households
+    Source code: B19080
+    NHGIS code:  AO7Z
+        AO7ZE001:    Quintile Upper Limits: Lowest Quintile
+        AO7ZE002:    Quintile Upper Limits: Second Quintile
+        AO7ZE003:    Quintile Upper Limits: Third Quintile
+        AO7ZE004:    Quintile Upper Limits: Fourth Quintile
+        AO7ZE005:    Lower Limit of Top 5 Percent
+ 
+    Table 13:    Mean Household Income of Quintiles
+    Universe:    Households
+    Source code: B19081
+    NHGIS code:  AO70
+        AO70E001:    Quintile Means: Lowest Quintile
+        AO70E002:    Quintile Means: Second Quintile
+        AO70E003:    Quintile Means: Third Quintile
+        AO70E004:    Quintile Means: Fourth Quintile
+        AO70E005:    Quintile Means: Highest Quintile
+        AO70E006:    Top 5 Percent
+ 
+    Table 14:    Gini Index of Income Inequality
+    Universe:    Households
+    Source code: B19083
+    NHGIS code:  AO72
+        AO72E001:    Gini Index
+ 
+    Table 15:    Industry by Occupation for the Civilian Employed Population 16 Years and Over
+    Universe:    Civilian employed population 16 years and over
+    Source code: C24050
+    NHGIS code:  APGX
+        APGXE001:    Total
+        APGXE002:    Agriculture, forestry, fishing and hunting, and mining
+        APGXE003:    Construction
+        APGXE004:    Manufacturing
+        APGXE005:    Wholesale trade
+        APGXE006:    Retail trade
+        APGXE007:    Transportation and warehousing, and utilities
+        APGXE008:    Information
+        APGXE009:    Finance and insurance, and real estate, and rental and leasing
+        APGXE010:    Professional, scientific, and management, and administrative, and waste management services
+        APGXE011:    Educational services, and health care and social assistance
+        APGXE012:    Arts, entertainment, and recreation, and accommodation and food services
+        APGXE013:    Other services, except public administration
+        APGXE014:    Public administration
+        APGXE015:    Management, business, science, and arts occupations
+        APGXE016:    Management, business, science, and arts occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXE017:    Management, business, science, and arts occupations: Construction
+        APGXE018:    Management, business, science, and arts occupations: Manufacturing
+        APGXE019:    Management, business, science, and arts occupations: Wholesale trade
+        APGXE020:    Management, business, science, and arts occupations: Retail trade
+        APGXE021:    Management, business, science, and arts occupations: Transportation and warehousing, and utilities
+        APGXE022:    Management, business, science, and arts occupations: Information
+        APGXE023:    Management, business, science, and arts occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXE024:    Management, business, science, and arts occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXE025:    Management, business, science, and arts occupations: Educational services, and health care and social assistance
+        APGXE026:    Management, business, science, and arts occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXE027:    Management, business, science, and arts occupations: Other services, except public administration
+        APGXE028:    Management, business, science, and arts occupations: Public administration
+        APGXE029:    Service occupations
+        APGXE030:    Service occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXE031:    Service occupations: Construction
+        APGXE032:    Service occupations: Manufacturing
+        APGXE033:    Service occupations: Wholesale trade
+        APGXE034:    Service occupations: Retail trade
+        APGXE035:    Service occupations: Transportation and warehousing, and utilities
+        APGXE036:    Service occupations: Information
+        APGXE037:    Service occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXE038:    Service occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXE039:    Service occupations: Educational services, and health care and social assistance
+        APGXE040:    Service occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXE041:    Service occupations: Other services, except public administration
+        APGXE042:    Service occupations: Public administration
+        APGXE043:    Sales and office occupations
+        APGXE044:    Sales and office occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXE045:    Sales and office occupations: Construction
+        APGXE046:    Sales and office occupations: Manufacturing
+        APGXE047:    Sales and office occupations: Wholesale trade
+        APGXE048:    Sales and office occupations: Retail trade
+        APGXE049:    Sales and office occupations: Transportation and warehousing, and utilities
+        APGXE050:    Sales and office occupations: Information
+        APGXE051:    Sales and office occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXE052:    Sales and office occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXE053:    Sales and office occupations: Educational services, and health care and social assistance
+        APGXE054:    Sales and office occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXE055:    Sales and office occupations: Other services, except public administration
+        APGXE056:    Sales and office occupations: Public administration
+        APGXE057:    Natural resources, construction, and maintenance occupations
+        APGXE058:    Natural resources, construction, and maintenance occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXE059:    Natural resources, construction, and maintenance occupations: Construction
+        APGXE060:    Natural resources, construction, and maintenance occupations: Manufacturing
+        APGXE061:    Natural resources, construction, and maintenance occupations: Wholesale trade
+        APGXE062:    Natural resources, construction, and maintenance occupations: Retail trade
+        APGXE063:    Natural resources, construction, and maintenance occupations: Transportation and warehousing, and utilities
+        APGXE064:    Natural resources, construction, and maintenance occupations: Information
+        APGXE065:    Natural resources, construction, and maintenance occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXE066:    Natural resources, construction, and maintenance occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXE067:    Natural resources, construction, and maintenance occupations: Educational services, and health care and social assistance
+        APGXE068:    Natural resources, construction, and maintenance occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXE069:    Natural resources, construction, and maintenance occupations: Other services, except public administration
+        APGXE070:    Natural resources, construction, and maintenance occupations: Public administration
+        APGXE071:    Production, transportation, and material moving occupations
+        APGXE072:    Production, transportation, and material moving occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXE073:    Production, transportation, and material moving occupations: Construction
+        APGXE074:    Production, transportation, and material moving occupations: Manufacturing
+        APGXE075:    Production, transportation, and material moving occupations: Wholesale trade
+        APGXE076:    Production, transportation, and material moving occupations: Retail trade
+        APGXE077:    Production, transportation, and material moving occupations: Transportation and warehousing, and utilities
+        APGXE078:    Production, transportation, and material moving occupations: Information
+        APGXE079:    Production, transportation, and material moving occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXE080:    Production, transportation, and material moving occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXE081:    Production, transportation, and material moving occupations: Educational services, and health care and social assistance
+        APGXE082:    Production, transportation, and material moving occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXE083:    Production, transportation, and material moving occupations: Other services, except public administration
+        APGXE084:    Production, transportation, and material moving occupations: Public administration
+ 
+    Table 16:    Household Income by Selected Monthly Owner Costs as a Percentage of Household Income in the Past 12 Months
+    Universe:    Owner-occupied housing units
+    Source code: B25095
+    NHGIS code:  APBY
+        APBYE001:    Total
+        APBYE002:    Less than $10,000
+        APBYE003:    Less than $10,000: Less than 20.0 percent
+        APBYE004:    Less than $10,000: 20.0 to 24.9 percent
+        APBYE005:    Less than $10,000: 25.0 to 29.9 percent
+        APBYE006:    Less than $10,000: 30.0 to 34.9 percent
+        APBYE007:    Less than $10,000: 35.0 to 39.9 percent
+        APBYE008:    Less than $10,000: 40.0 to 49.9 percent
+        APBYE009:    Less than $10,000: 50.0 percent or more
+        APBYE010:    Less than $10,000: Not computed
+        APBYE011:    $10,000 to $19,999
+        APBYE012:    $10,000 to $19,999: Less than 20.0 percent
+        APBYE013:    $10,000 to $19,999: 20.0 to 24.9 percent
+        APBYE014:    $10,000 to $19,999: 25.0 to 29.9 percent
+        APBYE015:    $10,000 to $19,999: 30.0 to 34.9 percent
+        APBYE016:    $10,000 to $19,999: 35.0 to 39.9 percent
+        APBYE017:    $10,000 to $19,999: 40.0 to 49.9 percent
+        APBYE018:    $10,000 to $19,999: 50.0 percent or more
+        APBYE019:    $10,000 to $19,999: Not computed
+        APBYE020:    $20,000 to $34,999
+        APBYE021:    $20,000 to $34,999: Less than 20.0 percent
+        APBYE022:    $20,000 to $34,999: 20.0 to 24.9 percent
+        APBYE023:    $20,000 to $34,999: 25.0 to 29.9 percent
+        APBYE024:    $20,000 to $34,999: 30.0 to 34.9 percent
+        APBYE025:    $20,000 to $34,999: 35.0 to 39.9 percent
+        APBYE026:    $20,000 to $34,999: 40.0 to 49.9 percent
+        APBYE027:    $20,000 to $34,999: 50.0 percent or more
+        APBYE028:    $20,000 to $34,999: Not computed
+        APBYE029:    $35,000 to $49,999
+        APBYE030:    $35,000 to $49,999: Less than 20.0 percent
+        APBYE031:    $35,000 to $49,999: 20.0 to 24.9 percent
+        APBYE032:    $35,000 to $49,999: 25.0 to 29.9 percent
+        APBYE033:    $35,000 to $49,999: 30.0 to 34.9 percent
+        APBYE034:    $35,000 to $49,999: 35.0 to 39.9 percent
+        APBYE035:    $35,000 to $49,999: 40.0 to 49.9 percent
+        APBYE036:    $35,000 to $49,999: 50.0 percent or more
+        APBYE037:    $35,000 to $49,999: Not computed
+        APBYE038:    $50,000 to $74,999
+        APBYE039:    $50,000 to $74,999: Less than 20.0 percent
+        APBYE040:    $50,000 to $74,999: 20.0 to 24.9 percent
+        APBYE041:    $50,000 to $74,999: 25.0 to 29.9 percent
+        APBYE042:    $50,000 to $74,999: 30.0 to 34.9 percent
+        APBYE043:    $50,000 to $74,999: 35.0 to 39.9 percent
+        APBYE044:    $50,000 to $74,999: 40.0 to 49.9 percent
+        APBYE045:    $50,000 to $74,999: 50.0 percent or more
+        APBYE046:    $50,000 to $74,999: Not computed
+        APBYE047:    $75,000 to $99,999
+        APBYE048:    $75,000 to $99,999: Less than 20.0 percent
+        APBYE049:    $75,000 to $99,999: 20.0 to 24.9 percent
+        APBYE050:    $75,000 to $99,999: 25.0 to 29.9 percent
+        APBYE051:    $75,000 to $99,999: 30.0 to 34.9 percent
+        APBYE052:    $75,000 to $99,999: 35.0 to 39.9 percent
+        APBYE053:    $75,000 to $99,999: 40.0 to 49.9 percent
+        APBYE054:    $75,000 to $99,999: 50.0 percent or more
+        APBYE055:    $75,000 to $99,999: Not computed
+        APBYE056:    $100,000 to $149,999
+        APBYE057:    $100,000 to $149,999: Less than 20.0 percent
+        APBYE058:    $100,000 to $149,999: 20.0 to 24.9 percent
+        APBYE059:    $100,000 to $149,999: 25.0 to 29.9 percent
+        APBYE060:    $100,000 to $149,999: 30.0 to 34.9 percent
+        APBYE061:    $100,000 to $149,999: 35.0 to 39.9 percent
+        APBYE062:    $100,000 to $149,999: 40.0 to 49.9 percent
+        APBYE063:    $100,000 to $149,999: 50.0 percent or more
+        APBYE064:    $100,000 to $149,999: Not computed
+        APBYE065:    $150,000 or more
+        APBYE066:    $150,000 or more: Less than 20.0 percent
+        APBYE067:    $150,000 or more: 20.0 to 24.9 percent
+        APBYE068:    $150,000 or more: 25.0 to 29.9 percent
+        APBYE069:    $150,000 or more: 30.0 to 34.9 percent
+        APBYE070:    $150,000 or more: 35.0 to 39.9 percent
+        APBYE071:    $150,000 or more: 40.0 to 49.9 percent
+        APBYE072:    $150,000 or more: 50.0 percent or more
+        APBYE073:    $150,000 or more: Not computed
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Geographic Area Full Name
+ 
+    Table 1:     Aggregate Number of Vehicles (Car, Truck, or Van) Used in Commuting by Workers 16 Years and Over by Sex
+    Universe:    Workers whose means of transportation is car, truck, or van
+    Source code: B08015
+    NHGIS code:  AO1W
+        AO1WM001:    Aggregate number of vehicles (car, truck, or van) used in commuting
+        AO1WM002:    Aggregate number of vehicles (car, truck, or van) used in commuting: Male
+        AO1WM003:    Aggregate number of vehicles (car, truck, or van) used in commuting: Female
+ 
+    Table 2:     Poverty Status in the Past 12 Months by Sex by Age
+    Universe:    Population for whom poverty status is determined
+    Source code: B17001
+    NHGIS code:  AO5D
+        AO5DM001:    Total
+        AO5DM002:    Income in the past 12 months below poverty level
+        AO5DM003:    Income in the past 12 months below poverty level: Male
+        AO5DM004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AO5DM005:    Income in the past 12 months below poverty level: Male: 5 years
+        AO5DM006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AO5DM007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AO5DM008:    Income in the past 12 months below poverty level: Male: 15 years
+        AO5DM009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AO5DM010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AO5DM011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AO5DM012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AO5DM013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AO5DM014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AO5DM015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AO5DM016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AO5DM017:    Income in the past 12 months below poverty level: Female
+        AO5DM018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AO5DM019:    Income in the past 12 months below poverty level: Female: 5 years
+        AO5DM020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AO5DM021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AO5DM022:    Income in the past 12 months below poverty level: Female: 15 years
+        AO5DM023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AO5DM024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AO5DM025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AO5DM026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AO5DM027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AO5DM028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AO5DM029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AO5DM030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AO5DM031:    Income in the past 12 months at or above poverty level
+        AO5DM032:    Income in the past 12 months at or above poverty level: Male
+        AO5DM033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AO5DM034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AO5DM035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AO5DM036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AO5DM037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AO5DM038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AO5DM039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AO5DM040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AO5DM041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AO5DM042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AO5DM043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AO5DM044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AO5DM045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AO5DM046:    Income in the past 12 months at or above poverty level: Female
+        AO5DM047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AO5DM048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AO5DM049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AO5DM050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AO5DM051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AO5DM052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AO5DM053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AO5DM054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AO5DM055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AO5DM056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AO5DM057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AO5DM058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AO5DM059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+    Table 3:     Poverty Status in the Past 12 Months by Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone population for whom poverty status is determined
+    Source code: B17001B
+    NHGIS code:  AO5F
+        AO5FM001:    Total
+        AO5FM002:    Income in the past 12 months below poverty level
+        AO5FM003:    Income in the past 12 months below poverty level: Male
+        AO5FM004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AO5FM005:    Income in the past 12 months below poverty level: Male: 5 years
+        AO5FM006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AO5FM007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AO5FM008:    Income in the past 12 months below poverty level: Male: 15 years
+        AO5FM009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AO5FM010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AO5FM011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AO5FM012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AO5FM013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AO5FM014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AO5FM015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AO5FM016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AO5FM017:    Income in the past 12 months below poverty level: Female
+        AO5FM018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AO5FM019:    Income in the past 12 months below poverty level: Female: 5 years
+        AO5FM020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AO5FM021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AO5FM022:    Income in the past 12 months below poverty level: Female: 15 years
+        AO5FM023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AO5FM024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AO5FM025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AO5FM026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AO5FM027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AO5FM028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AO5FM029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AO5FM030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AO5FM031:    Income in the past 12 months at or above poverty level
+        AO5FM032:    Income in the past 12 months at or above poverty level: Male
+        AO5FM033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AO5FM034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AO5FM035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AO5FM036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AO5FM037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AO5FM038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AO5FM039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AO5FM040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AO5FM041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AO5FM042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AO5FM043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AO5FM044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AO5FM045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AO5FM046:    Income in the past 12 months at or above poverty level: Female
+        AO5FM047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AO5FM048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AO5FM049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AO5FM050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AO5FM051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AO5FM052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AO5FM053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AO5FM054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AO5FM055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AO5FM056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AO5FM057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AO5FM058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AO5FM059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+    Table 4:     Poverty Status in the Past 12 Months by Sex by Age (Hispanic or Latino)
+    Universe:    Hispanic or Latino population for whom poverty status is determined
+    Source code: B17001I
+    NHGIS code:  AO5M
+        AO5MM001:    Total
+        AO5MM002:    Income in the past 12 months below poverty level
+        AO5MM003:    Income in the past 12 months below poverty level: Male
+        AO5MM004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AO5MM005:    Income in the past 12 months below poverty level: Male: 5 years
+        AO5MM006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AO5MM007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AO5MM008:    Income in the past 12 months below poverty level: Male: 15 years
+        AO5MM009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AO5MM010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AO5MM011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AO5MM012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AO5MM013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AO5MM014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AO5MM015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AO5MM016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AO5MM017:    Income in the past 12 months below poverty level: Female
+        AO5MM018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AO5MM019:    Income in the past 12 months below poverty level: Female: 5 years
+        AO5MM020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AO5MM021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AO5MM022:    Income in the past 12 months below poverty level: Female: 15 years
+        AO5MM023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AO5MM024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AO5MM025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AO5MM026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AO5MM027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AO5MM028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AO5MM029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AO5MM030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AO5MM031:    Income in the past 12 months at or above poverty level
+        AO5MM032:    Income in the past 12 months at or above poverty level: Male
+        AO5MM033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AO5MM034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AO5MM035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AO5MM036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AO5MM037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AO5MM038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AO5MM039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AO5MM040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AO5MM041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AO5MM042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AO5MM043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AO5MM044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AO5MM045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AO5MM046:    Income in the past 12 months at or above poverty level: Female
+        AO5MM047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AO5MM048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AO5MM049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AO5MM050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AO5MM051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AO5MM052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AO5MM053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AO5MM054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AO5MM055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AO5MM056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AO5MM057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AO5MM058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AO5MM059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+    Table 5:     Poverty Status in the Past 12 Months by Age
+    Universe:    Population for whom poverty status is determined
+    Source code: B17020
+    NHGIS code:  AO6A
+        AO6AM001:    Total
+        AO6AM002:    Income in the past 12 months below poverty level
+        AO6AM003:    Income in the past 12 months below poverty level: Under 6 years
+        AO6AM004:    Income in the past 12 months below poverty level: 6 to 11 years
+        AO6AM005:    Income in the past 12 months below poverty level: 12 to 17 years
+        AO6AM006:    Income in the past 12 months below poverty level: 18 to 59 years
+        AO6AM007:    Income in the past 12 months below poverty level: 60 to 74 years
+        AO6AM008:    Income in the past 12 months below poverty level: 75 to 84 years
+        AO6AM009:    Income in the past 12 months below poverty level: 85 years and over
+        AO6AM010:    Income in the past 12 months at or above poverty level
+        AO6AM011:    Income in the past 12 months at or above poverty level: Under 6 years
+        AO6AM012:    Income in the past 12 months at or above poverty level: 6 to 11 years
+        AO6AM013:    Income in the past 12 months at or above poverty level: 12 to 17 years
+        AO6AM014:    Income in the past 12 months at or above poverty level: 18 to 59 years
+        AO6AM015:    Income in the past 12 months at or above poverty level: 60 to 74 years
+        AO6AM016:    Income in the past 12 months at or above poverty level: 75 to 84 years
+        AO6AM017:    Income in the past 12 months at or above poverty level: 85 years and over
+ 
+    Table 6:     Poverty Status in the Past 12 Months by Age (Black or African American Alone)
+    Universe:    Black or African American alone population for whom poverty status is determined
+    Source code: B17020B
+    NHGIS code:  AO6C
+        AO6CM001:    Total
+        AO6CM002:    Income in the past 12 months below poverty level
+        AO6CM003:    Income in the past 12 months below poverty level: Under 6 years
+        AO6CM004:    Income in the past 12 months below poverty level: 6 to 11 years
+        AO6CM005:    Income in the past 12 months below poverty level: 12 to 17 years
+        AO6CM006:    Income in the past 12 months below poverty level: 18 to 59 years
+        AO6CM007:    Income in the past 12 months below poverty level: 60 to 74 years
+        AO6CM008:    Income in the past 12 months below poverty level: 75 to 84 years
+        AO6CM009:    Income in the past 12 months below poverty level: 85 years and over
+        AO6CM010:    Income in the past 12 months at or above poverty level
+        AO6CM011:    Income in the past 12 months at or above poverty level: Under 6 years
+        AO6CM012:    Income in the past 12 months at or above poverty level: 6 to 11 years
+        AO6CM013:    Income in the past 12 months at or above poverty level: 12 to 17 years
+        AO6CM014:    Income in the past 12 months at or above poverty level: 18 to 59 years
+        AO6CM015:    Income in the past 12 months at or above poverty level: 60 to 74 years
+        AO6CM016:    Income in the past 12 months at or above poverty level: 75 to 84 years
+        AO6CM017:    Income in the past 12 months at or above poverty level: 85 years and over
+ 
+    Table 7:     Poverty Status in the Past 12 Months by Age (Hispanic or Latino)
+    Universe:    Hispanic or Latino population for whom poverty status is determined
+    Source code: B17020I
+    NHGIS code:  AO6J
+        AO6JM001:    Total
+        AO6JM002:    Income in the past 12 months below poverty level
+        AO6JM003:    Income in the past 12 months below poverty level: Under 6 years
+        AO6JM004:    Income in the past 12 months below poverty level: 6 to 11 years
+        AO6JM005:    Income in the past 12 months below poverty level: 12 to 17 years
+        AO6JM006:    Income in the past 12 months below poverty level: 18 to 59 years
+        AO6JM007:    Income in the past 12 months below poverty level: 60 to 74 years
+        AO6JM008:    Income in the past 12 months below poverty level: 75 to 84 years
+        AO6JM009:    Income in the past 12 months below poverty level: 85 years and over
+        AO6JM010:    Income in the past 12 months at or above poverty level
+        AO6JM011:    Income in the past 12 months at or above poverty level: Under 6 years
+        AO6JM012:    Income in the past 12 months at or above poverty level: 6 to 11 years
+        AO6JM013:    Income in the past 12 months at or above poverty level: 12 to 17 years
+        AO6JM014:    Income in the past 12 months at or above poverty level: 18 to 59 years
+        AO6JM015:    Income in the past 12 months at or above poverty level: 60 to 74 years
+        AO6JM016:    Income in the past 12 months at or above poverty level: 75 to 84 years
+        AO6JM017:    Income in the past 12 months at or above poverty level: 85 years and over
+ 
+    Table 8:     Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Black or African American Alone Householder)
+    Universe:    Households with a householder who is Black or African American alone
+    Source code: B19001B
+    NHGIS code:  AO68
+        AO68M001:    Total
+        AO68M002:    Less than $10,000
+        AO68M003:    $10,000 to $14,999
+        AO68M004:    $15,000 to $19,999
+        AO68M005:    $20,000 to $24,999
+        AO68M006:    $25,000 to $29,999
+        AO68M007:    $30,000 to $34,999
+        AO68M008:    $35,000 to $39,999
+        AO68M009:    $40,000 to $44,999
+        AO68M010:    $45,000 to $49,999
+        AO68M011:    $50,000 to $59,999
+        AO68M012:    $60,000 to $74,999
+        AO68M013:    $75,000 to $99,999
+        AO68M014:    $100,000 to $124,999
+        AO68M015:    $125,000 to $149,999
+        AO68M016:    $150,000 to $199,999
+        AO68M017:    $200,000 or more
+ 
+    Table 9:     Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Hispanic or Latino Householder)
+    Universe:    Households with a householder who is Hispanic or Latino
+    Source code: B19001I
+    NHGIS code:  AO7F
+        AO7FM001:    Total
+        AO7FM002:    Less than $10,000
+        AO7FM003:    $10,000 to $14,999
+        AO7FM004:    $15,000 to $19,999
+        AO7FM005:    $20,000 to $24,999
+        AO7FM006:    $25,000 to $29,999
+        AO7FM007:    $30,000 to $34,999
+        AO7FM008:    $35,000 to $39,999
+        AO7FM009:    $40,000 to $44,999
+        AO7FM010:    $45,000 to $49,999
+        AO7FM011:    $50,000 to $59,999
+        AO7FM012:    $60,000 to $74,999
+        AO7FM013:    $75,000 to $99,999
+        AO7FM014:    $100,000 to $124,999
+        AO7FM015:    $125,000 to $149,999
+        AO7FM016:    $150,000 to $199,999
+        AO7FM017:    $200,000 or more
+ 
+    Table 10:    Median Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Black or African American Alone Householder)
+    Universe:    Households with a householder who is Black or African American alone
+    Source code: B19013B
+    NHGIS code:  AO7H
+        AO7HM001:    Median household income in the past 12 months (in 2021 inflation-adjusted dollars)
+ 
+    Table 11:    Median Household Income in the Past 12 Months (in 2021 Inflation-Adjusted Dollars) (Hispanic or Latino Householder)
+    Universe:    Households with a householder who is Hispanic or Latino
+    Source code: B19013I
+    NHGIS code:  AO7O
+        AO7OM001:    Median household income in the past 12 months (in 2021 inflation-adjusted dollars)
+ 
+    Table 12:    Household Income Quintile Upper Limits
+    Universe:    Households
+    Source code: B19080
+    NHGIS code:  AO7Z
+        AO7ZM001:    Quintile Upper Limits: Lowest Quintile
+        AO7ZM002:    Quintile Upper Limits: Second Quintile
+        AO7ZM003:    Quintile Upper Limits: Third Quintile
+        AO7ZM004:    Quintile Upper Limits: Fourth Quintile
+        AO7ZM005:    Lower Limit of Top 5 Percent
+ 
+    Table 13:    Mean Household Income of Quintiles
+    Universe:    Households
+    Source code: B19081
+    NHGIS code:  AO70
+        AO70M001:    Quintile Means: Lowest Quintile
+        AO70M002:    Quintile Means: Second Quintile
+        AO70M003:    Quintile Means: Third Quintile
+        AO70M004:    Quintile Means: Fourth Quintile
+        AO70M005:    Quintile Means: Highest Quintile
+        AO70M006:    Top 5 Percent
+ 
+    Table 14:    Gini Index of Income Inequality
+    Universe:    Households
+    Source code: B19083
+    NHGIS code:  AO72
+        AO72M001:    Gini Index
+ 
+    Table 15:    Industry by Occupation for the Civilian Employed Population 16 Years and Over
+    Universe:    Civilian employed population 16 years and over
+    Source code: C24050
+    NHGIS code:  APGX
+        APGXM001:    Total
+        APGXM002:    Agriculture, forestry, fishing and hunting, and mining
+        APGXM003:    Construction
+        APGXM004:    Manufacturing
+        APGXM005:    Wholesale trade
+        APGXM006:    Retail trade
+        APGXM007:    Transportation and warehousing, and utilities
+        APGXM008:    Information
+        APGXM009:    Finance and insurance, and real estate, and rental and leasing
+        APGXM010:    Professional, scientific, and management, and administrative, and waste management services
+        APGXM011:    Educational services, and health care and social assistance
+        APGXM012:    Arts, entertainment, and recreation, and accommodation and food services
+        APGXM013:    Other services, except public administration
+        APGXM014:    Public administration
+        APGXM015:    Management, business, science, and arts occupations
+        APGXM016:    Management, business, science, and arts occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXM017:    Management, business, science, and arts occupations: Construction
+        APGXM018:    Management, business, science, and arts occupations: Manufacturing
+        APGXM019:    Management, business, science, and arts occupations: Wholesale trade
+        APGXM020:    Management, business, science, and arts occupations: Retail trade
+        APGXM021:    Management, business, science, and arts occupations: Transportation and warehousing, and utilities
+        APGXM022:    Management, business, science, and arts occupations: Information
+        APGXM023:    Management, business, science, and arts occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXM024:    Management, business, science, and arts occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXM025:    Management, business, science, and arts occupations: Educational services, and health care and social assistance
+        APGXM026:    Management, business, science, and arts occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXM027:    Management, business, science, and arts occupations: Other services, except public administration
+        APGXM028:    Management, business, science, and arts occupations: Public administration
+        APGXM029:    Service occupations
+        APGXM030:    Service occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXM031:    Service occupations: Construction
+        APGXM032:    Service occupations: Manufacturing
+        APGXM033:    Service occupations: Wholesale trade
+        APGXM034:    Service occupations: Retail trade
+        APGXM035:    Service occupations: Transportation and warehousing, and utilities
+        APGXM036:    Service occupations: Information
+        APGXM037:    Service occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXM038:    Service occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXM039:    Service occupations: Educational services, and health care and social assistance
+        APGXM040:    Service occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXM041:    Service occupations: Other services, except public administration
+        APGXM042:    Service occupations: Public administration
+        APGXM043:    Sales and office occupations
+        APGXM044:    Sales and office occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXM045:    Sales and office occupations: Construction
+        APGXM046:    Sales and office occupations: Manufacturing
+        APGXM047:    Sales and office occupations: Wholesale trade
+        APGXM048:    Sales and office occupations: Retail trade
+        APGXM049:    Sales and office occupations: Transportation and warehousing, and utilities
+        APGXM050:    Sales and office occupations: Information
+        APGXM051:    Sales and office occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXM052:    Sales and office occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXM053:    Sales and office occupations: Educational services, and health care and social assistance
+        APGXM054:    Sales and office occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXM055:    Sales and office occupations: Other services, except public administration
+        APGXM056:    Sales and office occupations: Public administration
+        APGXM057:    Natural resources, construction, and maintenance occupations
+        APGXM058:    Natural resources, construction, and maintenance occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXM059:    Natural resources, construction, and maintenance occupations: Construction
+        APGXM060:    Natural resources, construction, and maintenance occupations: Manufacturing
+        APGXM061:    Natural resources, construction, and maintenance occupations: Wholesale trade
+        APGXM062:    Natural resources, construction, and maintenance occupations: Retail trade
+        APGXM063:    Natural resources, construction, and maintenance occupations: Transportation and warehousing, and utilities
+        APGXM064:    Natural resources, construction, and maintenance occupations: Information
+        APGXM065:    Natural resources, construction, and maintenance occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXM066:    Natural resources, construction, and maintenance occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXM067:    Natural resources, construction, and maintenance occupations: Educational services, and health care and social assistance
+        APGXM068:    Natural resources, construction, and maintenance occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXM069:    Natural resources, construction, and maintenance occupations: Other services, except public administration
+        APGXM070:    Natural resources, construction, and maintenance occupations: Public administration
+        APGXM071:    Production, transportation, and material moving occupations
+        APGXM072:    Production, transportation, and material moving occupations: Agriculture, forestry, fishing and hunting, and mining
+        APGXM073:    Production, transportation, and material moving occupations: Construction
+        APGXM074:    Production, transportation, and material moving occupations: Manufacturing
+        APGXM075:    Production, transportation, and material moving occupations: Wholesale trade
+        APGXM076:    Production, transportation, and material moving occupations: Retail trade
+        APGXM077:    Production, transportation, and material moving occupations: Transportation and warehousing, and utilities
+        APGXM078:    Production, transportation, and material moving occupations: Information
+        APGXM079:    Production, transportation, and material moving occupations: Finance and insurance, and real estate, and rental and leasing
+        APGXM080:    Production, transportation, and material moving occupations: Professional, scientific, and management, and administrative, and waste management services
+        APGXM081:    Production, transportation, and material moving occupations: Educational services, and health care and social assistance
+        APGXM082:    Production, transportation, and material moving occupations: Arts, entertainment, and recreation, and accommodation and food services
+        APGXM083:    Production, transportation, and material moving occupations: Other services, except public administration
+        APGXM084:    Production, transportation, and material moving occupations: Public administration
+ 
+    Table 16:    Household Income by Selected Monthly Owner Costs as a Percentage of Household Income in the Past 12 Months
+    Universe:    Owner-occupied housing units
+    Source code: B25095
+    NHGIS code:  APBY
+        APBYM001:    Total
+        APBYM002:    Less than $10,000
+        APBYM003:    Less than $10,000: Less than 20.0 percent
+        APBYM004:    Less than $10,000: 20.0 to 24.9 percent
+        APBYM005:    Less than $10,000: 25.0 to 29.9 percent
+        APBYM006:    Less than $10,000: 30.0 to 34.9 percent
+        APBYM007:    Less than $10,000: 35.0 to 39.9 percent
+        APBYM008:    Less than $10,000: 40.0 to 49.9 percent
+        APBYM009:    Less than $10,000: 50.0 percent or more
+        APBYM010:    Less than $10,000: Not computed
+        APBYM011:    $10,000 to $19,999
+        APBYM012:    $10,000 to $19,999: Less than 20.0 percent
+        APBYM013:    $10,000 to $19,999: 20.0 to 24.9 percent
+        APBYM014:    $10,000 to $19,999: 25.0 to 29.9 percent
+        APBYM015:    $10,000 to $19,999: 30.0 to 34.9 percent
+        APBYM016:    $10,000 to $19,999: 35.0 to 39.9 percent
+        APBYM017:    $10,000 to $19,999: 40.0 to 49.9 percent
+        APBYM018:    $10,000 to $19,999: 50.0 percent or more
+        APBYM019:    $10,000 to $19,999: Not computed
+        APBYM020:    $20,000 to $34,999
+        APBYM021:    $20,000 to $34,999: Less than 20.0 percent
+        APBYM022:    $20,000 to $34,999: 20.0 to 24.9 percent
+        APBYM023:    $20,000 to $34,999: 25.0 to 29.9 percent
+        APBYM024:    $20,000 to $34,999: 30.0 to 34.9 percent
+        APBYM025:    $20,000 to $34,999: 35.0 to 39.9 percent
+        APBYM026:    $20,000 to $34,999: 40.0 to 49.9 percent
+        APBYM027:    $20,000 to $34,999: 50.0 percent or more
+        APBYM028:    $20,000 to $34,999: Not computed
+        APBYM029:    $35,000 to $49,999
+        APBYM030:    $35,000 to $49,999: Less than 20.0 percent
+        APBYM031:    $35,000 to $49,999: 20.0 to 24.9 percent
+        APBYM032:    $35,000 to $49,999: 25.0 to 29.9 percent
+        APBYM033:    $35,000 to $49,999: 30.0 to 34.9 percent
+        APBYM034:    $35,000 to $49,999: 35.0 to 39.9 percent
+        APBYM035:    $35,000 to $49,999: 40.0 to 49.9 percent
+        APBYM036:    $35,000 to $49,999: 50.0 percent or more
+        APBYM037:    $35,000 to $49,999: Not computed
+        APBYM038:    $50,000 to $74,999
+        APBYM039:    $50,000 to $74,999: Less than 20.0 percent
+        APBYM040:    $50,000 to $74,999: 20.0 to 24.9 percent
+        APBYM041:    $50,000 to $74,999: 25.0 to 29.9 percent
+        APBYM042:    $50,000 to $74,999: 30.0 to 34.9 percent
+        APBYM043:    $50,000 to $74,999: 35.0 to 39.9 percent
+        APBYM044:    $50,000 to $74,999: 40.0 to 49.9 percent
+        APBYM045:    $50,000 to $74,999: 50.0 percent or more
+        APBYM046:    $50,000 to $74,999: Not computed
+        APBYM047:    $75,000 to $99,999
+        APBYM048:    $75,000 to $99,999: Less than 20.0 percent
+        APBYM049:    $75,000 to $99,999: 20.0 to 24.9 percent
+        APBYM050:    $75,000 to $99,999: 25.0 to 29.9 percent
+        APBYM051:    $75,000 to $99,999: 30.0 to 34.9 percent
+        APBYM052:    $75,000 to $99,999: 35.0 to 39.9 percent
+        APBYM053:    $75,000 to $99,999: 40.0 to 49.9 percent
+        APBYM054:    $75,000 to $99,999: 50.0 percent or more
+        APBYM055:    $75,000 to $99,999: Not computed
+        APBYM056:    $100,000 to $149,999
+        APBYM057:    $100,000 to $149,999: Less than 20.0 percent
+        APBYM058:    $100,000 to $149,999: 20.0 to 24.9 percent
+        APBYM059:    $100,000 to $149,999: 25.0 to 29.9 percent
+        APBYM060:    $100,000 to $149,999: 30.0 to 34.9 percent
+        APBYM061:    $100,000 to $149,999: 35.0 to 39.9 percent
+        APBYM062:    $100,000 to $149,999: 40.0 to 49.9 percent
+        APBYM063:    $100,000 to $149,999: 50.0 percent or more
+        APBYM064:    $100,000 to $149,999: Not computed
+        APBYM065:    $150,000 or more
+        APBYM066:    $150,000 or more: Less than 20.0 percent
+        APBYM067:    $150,000 or more: 20.0 to 24.9 percent
+        APBYM068:    $150,000 or more: 25.0 to 29.9 percent
+        APBYM069:    $150,000 or more: 30.0 to 34.9 percent
+        APBYM070:    $150,000 or more: 35.0 to 39.9 percent
+        APBYM071:    $150,000 or more: 40.0 to 49.9 percent
+        APBYM072:    $150,000 or more: 50.0 percent or more
+        APBYM073:    $150,000 or more: Not computed
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, Tracy Kugler, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 17.0 
+        [dataset]. Minneapolis, MN: IPUMS. 2022. 
+        http://doi.org/10.18128/D050.V17.0
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
